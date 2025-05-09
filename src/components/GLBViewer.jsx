@@ -34,13 +34,16 @@ export default function GLBViewer() {
 
   return (
     <div style={{ width: '100%', height: '100vh' }}>
-      <input
-        type="file"
-        accept=".glb"
-        ref={inputRef}
-        onChange={handleFile}
-        style={{ position: 'absolute', zIndex: 10, top: 10, left: 10 }}
-      />
+      <div>
+        <h1 className="title">GLB Viewer</h1>
+        <input
+          type="file"
+          accept=".glb"
+          ref={inputRef}
+          onChange={handleFile}
+        />
+      </div>
+
       <Canvas camera={{ position: [0, 2, 5], fov: 60 }}>
         <ambientLight intensity={0.5} />
         <directionalLight position={[5, 10, 7]} />

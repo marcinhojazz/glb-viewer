@@ -2,11 +2,9 @@ import GLBViewer from './components/GLBViewer'
 
 function App() {
   return (
-    <>
-      <div className="viewer">
-        <GLBViewer />
-      </div>
-    </>
+    <div className="viewer">
+      <GLBViewer />
+    </div>
   )
 }
 
