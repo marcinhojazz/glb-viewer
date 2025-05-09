@@ -1,4 +1,3 @@
-import './App.css'
 import GLBViewer from './components/GLBViewer'
 
 function App() {
